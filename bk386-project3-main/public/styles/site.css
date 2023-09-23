@@ -1,0 +1,413 @@
+html {
+  font-family: Luminari, fantasy;
+  background-color: #000000;
+}
+
+h1,
+a {
+  color: #c45caa;
+  font-family: Luminari, fantasy;
+}
+
+h1.id {
+  font-family: Luminari, fantasy;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#pictures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+#pictures img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 5px solid #c45caa;
+  box-shadow: 10px 10px 10px #ff0f0f;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 500px;
+  border: 4px solid #f962d3;
+  box-shadow: 1px 10px 10px 20px beige;
+  margin-top: 40px;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: beige;
+  color: rgb(0, 0, 0);
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: beige;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: beige;
+  color: #e89bd3;
+}
+
+.image {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Luminari, fantasy;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-header {
+  color: rgb(213, 0, 114);
+  font-family: Luminari, fantasy;
+}
+
+.add-entry2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(213, 0, 114);
+}
+
+.text {
+  font-family: Luminari, fantasy;
+  color: rgb(213, 0, 114);
+}
+
+.image img {
+  max-width: 250px;
+  max-height: 250px;
+  object-fit: contain;
+  margin-bottom: 20px;
+
+}
+
+.image:hover {
+  cursor: pointer;
+}
+
+.image p {
+  color: rgb(213, 0, 114);
+  font-size: 20px;
+  text-align: center;
+  margin-top: -10px;
+  font-weight: bold;
+}
+
+a:focus+.image {
+  display: flex;
+}
+
+.long {
+  display: none;
+}
+
+.confirm {
+  color: #000000;
+  text-align: center;
+  font-family: Luminari, fantasy;
+  font-size: large;
+}
+
+.display {
+  color: #000000;
+  font-weight: bold;
+}
+
+.text {
+  font-family: 'Times New Roman', Times, serif;
+  height: 10px;
+}
+
+.entry {
+  margin: 10px;
+}
+
+.submit-request {
+  margin-left: 230px;
+}
+
+h1 {
+  --s: 0em;
+  --d: #e132b5;
+
+  color: rgba(185, 18, 124, 0);
+  font-family: Luminari, fantasy;
+  font-size: 200%;
+  font-weight: bold;
+  background:
+    linear-gradient(80deg, var(--d) 40%, #000 0) calc(100% - var(--_u, 0%))/200% 100%;
+  background-clip: text, padding-box;
+  transition: 0.6s;
+}
+
+h1:hover {
+  --_u: 100%
+}
+
+.heading {
+  font-family: Luminari, fantasy;
+  color: rgb(213, 0, 114);
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.music-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8f0843;
+  color: #FFFFFF;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
+  box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+}
+
+.music-button:hover {
+  background-color: #dc37ab;
+}
+
+.music-button:active {
+  background-color: #ee60ca;
+}
+
+.music-button:active span {
+  margin-left: 9px;
+}
+
+.confirm {
+  font-family: Luminari, fantasy;
+  color: rgb(213, 0, 114);
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.form-header {
+  color: rgb(0, 0, 0);
+}
+
+.add-entry2 {
+  color: rgb(0, 0, 0);
+}
+
+.add-entry {
+  color: rgb(0, 0, 0);
+}
+
+.entry {
+  color: rgb(0, 0, 0);
+}
+
+
+.genre-field {
+  display: block;
+}
+
+.align-right {
+  color: beige;
+  margin-left: 250px;
+  margin-top: 20px;
+}
+
+.logo {
+  color: beige;
+  display: flex;
+  margin-top: 8%;
+  margin-left: 41%;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  border-radius: 10%;
+  background-color: #e132b5;
+  box-shadow: 1px 10px 10px 20px beige;
+
+}
+
+h2 {
+  margin-top: -1%;
+  margin-left: 42%;
+  font-family: Luminari, fantasy;
+
+}
+
+.label-input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  border-radius: 10%;
+  background-color: #e132b5;
+  box-shadow: 1px 10px 10px 20px beige;
+}
+
+.filter-by-stats {
+  color: beige;
+  font-family: Luminari, fantasy;
+}
+
+.form-header2 {
+  color: beige;
+}
+
+.h {
+  color:
+    beige;
+}
+
+h3 {
+  margin-top: 25%;
+  margin-left: 0%;
+  font-family: Luminari, fantasy;
+  text-align: center;
+  font-weight: 900;
+
+}
+
+h4 {
+  margin-bottom: 50%;
+  font-family: Luminari, fantasy;
+  text-align: center;
+  font-weight: 900;
+}
+
+
+.first-line,
+.second-line,
+.third-line {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0.5rem auto;
+}
+
+.first-line {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+  animation: typewriter_1 6s steps(33) 1s 1 normal both, first_cursor 900ms steps(33) 8;
+}
+
+.second-line {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+  animation: typewriter_2 5s steps(31) 1s 1 normal both, second_cursor 900ms steps(31) infinite;
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+}
+
+.third-line {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+  animation: typewriter_3 4s steps(29) 1s 1 normal both, third_cursor 900ms steps(29) infinite;
+  -webkit-animation-delay: 13s;
+  animation-delay: 13s;
+}
+
+@keyframes typewriter_1 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 80rem;
+  }
+}
+
+@keyframes typewriter_2 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 90rem;
+  }
+}
+
+@keyframes typewriter_3 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 90rem;
+  }
+}
+
+@keyframes first_cursor {
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+
+  to {
+    border-right-color: rgb(213, 0, 114);
+  }
+}
+
+@keyframes second_cursor {
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+
+  to {
+    border-right-color: rgb(213, 0, 114);
+  }
+}
+
+@keyframes third_cursor {
+  from {
+    border-right-color: rgba(17, 17, 17, 0.9);
+  }
+
+  to {
+    border-right-color: rgb(213, 0, 114);
+  }
+}
